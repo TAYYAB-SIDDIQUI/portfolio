@@ -1,0 +1,210 @@
+body {
+    margin: 0px;
+    margin-top: 50px;
+    justify-items: center;
+    background-color: rgba(9, 1, 30, 0.982);
+    color: white;
+    font-family:'Times New Roman';
+}
+nav {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    margin: 0px;
+    color: white;
+    display: flex;
+    background-color: black;
+    width: 100%;
+}
+ul {
+    margin: 0px;
+    display: flex;
+    padding: 5px;
+    width: max-content;
+}
+li {
+    list-style: none;
+    margin-right: 20px;
+}
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+.projects {
+    display: flex;
+    justify-items: center;
+    gap: 16px;
+    margin: 10px;
+}
+.innerdiv {
+    width: 400px;
+    height: 300px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgba(7, 0, 18, 0.982);
+}
+
+.experience {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    
+    margin: 10px;
+    border-radius: 10px;
+}
+.projectimg {
+    width: 300px;
+    height: 200px;
+    margin-top: 20px;
+}
+.carousel-wrapper {
+      overflow: hidden;
+      width: 100%;
+      background: rgba(7, 0, 18, 0.982);
+      border: 0px solid ;
+      padding: 10px 0;
+    }
+.track {
+      display: flex;
+      width: max-content;
+      animation: scroll-left 40s linear infinite;
+    }
+.skills {
+      display: flex;
+      gap: 20px;
+      margin: 12px;
+    }
+.skill {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      white-space: nowrap;
+      background: rgba(9, 1, 30, 0.982);
+      color: white;
+      padding: 10px 10px;
+      border-radius: 10px;
+      font-size: 16px;
+      flex-shrink: 0;
+    }
+.skill img{
+    height: 150px;
+    width: 150px;
+    border-radius: 5px;
+    margin-bottom: 2px;
+}
+.Certificates{
+    width: 90%;
+    color: white;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+}
+.Certificate{
+    width: max-content;
+    align-items: center;
+    justify-items: center;
+}
+.Certificate button{
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    background:none;
+    border: none;
+    color: white;
+}
+.footersec{
+    width: 100%;
+    background-color: rgba(7, 0, 18, 0.982);
+}
+@keyframes scroll-left {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+@media only screen  and (max-width:1250px) and (min-width:850px){
+    .projectinfo{
+        display: flex;
+    }
+    .projects{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media only screen  and (max-width:850px) and (min-width:670px){
+    .projects{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media only screen  and (max-width:670px) and (min-width:460px){
+    nav ul li a{
+        font-size: 15px;
+    }
+    .Intro{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .projects{
+        display: flex;
+        flex-direction: column;
+    }
+    .contactinfo{
+        font-size: 15px;
+    }
+}
+@media only screen  and (max-width:460px) and (min-width:420px){
+    body{
+        font-size: 16px;
+    }
+    nav ul li a{
+        font-size: 15px;
+    }
+    .Intro{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .projects{
+        display: flex;
+        flex-direction: column;
+    }
+    .Certificate button{
+        font-size: 10px;
+    }
+    .contactinfo{
+        font-size: 13px;
+    }
+}
+@media only screen  and (max-width:420px){
+    body{
+        font-size: 12px;
+    }
+    nav ul li a{
+        font-size: 15px;
+    }
+    .Intro{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .projects{
+        display: flex;
+        flex-direction: column;
+    }
+    .Certificate button{
+        font-size: 10px;
+    }
+    .contactinfo{
+        font-size: 12px;
+    }
+}
